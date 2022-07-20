@@ -13,6 +13,8 @@ function CampaignMemberExistance(Inputs, Outputs) {
     // Internal variables
     var MemberExist = "";
     var Searchset = "";
+    var  MemberId="";
+    
 
     // Outputs
     var ResCode = "";
@@ -46,7 +48,7 @@ function CampaignMemberExistance(Inputs, Outputs) {
             Status = GetFieldValue("Status");
             MemberType = GetFieldValue("Member Type");
             var JoinDate1 = GetFieldValue("Start Date");
-            var MemberId = GetFieldValue("Id");
+            MemberId = GetFieldValue("Id");
             var JoinDate = new Date(JoinDate1);
 
             // Change date to shamsi
